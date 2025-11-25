@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre,  a, abbr, acronym, address, big, cite, code,  del, dfn, em, img, ins, kbd, q, s, samp,  small, strike, strong, sub, sup, tt, var,  b, u, i, center,  dl, dt, dd, ol, ul, li,  fieldset, form, label, legend,  table, caption, tbody, tfoot, thead, tr, th, td,  article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary,  time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin-right: auto;
+	margin-left: auto;
+	top: 0px;
+	cursor: url(media/cursor.cur), auto;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* !!!! MENU BALK !!!! */
+
+.menu {
+	background-color: #0CC;
+	height: 55px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+}
+/* === Header === */
+
+@font-face {
+    font-family: 'berlin_sans_fb_demibold';
+    src: url('font/berlin-sans-fb-demi-bold-webfont.eot');
+    src: url('font/berlin-sans-fb-demi-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/berlin-sans-fb-demi-bold-webfont.woff2') format('woff2'),
+         url('font/berlin-sans-fb-demi-bold-webfont.woff') format('woff'),
+         url('font/berlin-sans-fb-demi-bold-webfont.ttf') format('truetype'),
+         url('font/berlin-sans-fb-demi-bold-webfont.svg#berlin_sans_fb_demibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#header {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	position: relative;
+	border-left: 5px solid blue;
+}
+#header h1 {
+	float: left;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+#header h1 a {
+	color:#ffffff;
+	margin-left: 10px;
+	font-family: 'berlin_sans_fb_demibold';
+	font-size: 40px;
+	text-decoration: none;
+	position:relative;
+}
+
+#header h1 a span{
+  background: url(media/textbg.png) repeat-x;
+  position: absolute;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  height: 55px;
+}
+
+/* === Navigation === */
+#navigation {
+	display: block;
+	margin-top: 0;
+	height: 55px;
+	float: right;
+	width: 150px;
+}
+#navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* menu-item-main */
+#navigation ul li {
+	position: relative;
+	display: inline-block;
+	float: left;
+	height: 55px;
+	border-left: 1px inset rgba(1, 1, 1, 0.1);
+	border-right: 1px inset rgba(0, 0, 0, 0.1);
+}
+#navigation ul li:before {
+	content: "";
+	position: absolute;
+	left: .5em;
+	top: .97em;
+	width: 1.87em;
+	height: .3125em;
+	background: #fff;
+	box-shadow: 0 20px 0 0 #fff, 0 10.98px 0 #fff;
+}
+
+#navigation ul li:hover {
+	background-color: #FFFFFF;
+	background-position: 10px -53.75px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+#navigation ul:hover li:before {
+	content: "";
+	position: absolute;
+	left: .5em;
+	top: .97em;
+	width: 1.87em;
+	height: .3125em;
+	background: #0CC;
+	box-shadow: 0 20px 0 0 #0CC, 0 10.98px 0 #0CC;
+}
+#navigation ul li:hover a{
+	color: #0CC;
+}
+#navigation ul li a {
+	text-transform: uppercase;
+	font-family: 'berlin_sans_fb_demibold'; 
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	padding: 19.5px 10px 16.5px 47px;
+	color: #fff;
+	font-size: 110%;
+	line-height: 110%;
+}
+#navigation ul li a:hover {
+	color: #0CC;
+}
+/* STOP menu-item-main */
+
+/* menu-item-1,2,3,4,5,... */
+#navigation ul li ul li {
+	background-image: none;
+	background-color: #FFFFFF;
+	font-family: 'berlin_sans_fb_demibold';
+	font-weight: normal;
+	width: 200px;
+	height: 40px;
+	padding: 0;
+}
+#navigation ul li ul li:last-child {
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+#navigation ul li ul li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: none;
+	box-shadow:none;
+}
+#navigation ul li:hover ul li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: none;
+	box-shadow:none;
+}
+#navigation ul li ul li:hover {
+	color: #000;
+}
+#navigation ul li ul li a {
+	color: #000;
+	text-transform: none;
+	text-shadow: none;
+	padding: 10px 0 10px 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+#navigation ul li ul li a:hover {
+	color: #000;
+	padding-left: 20px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+/* STOP menu-item-1,2,3,4,5,... */
+
+/* random menu ding AFBLIJVEN LOL*/
+#navigation ul ul {
+	display: none;
+	margin: 0;
+	position: absolute;
+	top: 55px;
+	left: -1px;
+	z-index: 99999;
+}
+#navigation ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#navigation ul li:hover > ul {
+	display: block;
+}
+#navigation .current_page_item > a, #navigation .current_page_ancestor > a {
+	font-weight: bold;
+	font-family: 'berlin_sans_fb_demibold';
+}
+
+/* === Navigation === */
+#header h9 {
+	display: block;
+	margin-top: 0;
+	height: 55px;
+	float: right;
+	width: 150px;
+}
+
+#header h9 a {
+	color: #fff;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align: center;
+	margin-top: 0 px;
+	height: 55px;
+	width: 120px;
+	text-transform:uppercase;
+	border-left: 1px inset rgba(1, 1, 1, 0.1);
+	border-right: 1px inset rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+	font-family: 'berlin_sans_fb_demibold'; 
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 110%;
+	line-height: 110%;
+}
+
+
+
+/* !!!! BODY !!!! */
+
+body{
+background-image:url('media/bg.gif')
+;
+background-size: auto;
+background-repeat: repeat;
+background-opacity: 0.4;
+background-filter: alpha(opacity=40);
+/*background-size: 100% auto;*/
+}
+
+.banner {
+	background-image:url(media/heading.gif);
+	width: 1000px;
+	height: 205px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color:transparent;
+	border:5px ridge #0CC;
+}
+
+ #logo {
+	position: relative;
+	z-index: 5;
+	width: 150px;
+	margin-left: 45px;
+	margin-top: 55px;
+}
+
+ #contentimg {
+	position: relative;
+	margin-left: 90px;
+	margin-left: 90px;
+}
+
+/* === Content === */
+
+.content {
+	background-color: white;
+	top: -20px;
+	width: 1000px;
+	/* [disabled]height: 500px; */
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	min-height: 400px;
+	border-left:5px ridge #0CC;
+	border-right:5px ridge #0CC;
+	border-bottom:5px ridge #0CC;
+}
+
+.content h1 {
+	font-family: 'berlin_sans_fb_demibold';
+	font-size: 28px;
+	margin-left: 50px;
+	padding-bottom: 10px;
+}
+
+.content h2 {
+	font-size: 22px;
+	text-decoration: blink;
+	margin-left: 70px;
+}
+
+.content h20 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content h21 {
+	color: #F00;
+}
+	
+.content h22 {
+	color: #3C6;
+}
+
+.content h3 {
+	font-size: 16px;
+	text-decoration: underline;
+	margin-left: 80px;
+}
+
+.content p {
+	font-size: 15px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.content p2 {
+	font-weight: bold;
+}
+.content p3 {
+	color: #999;
+	font-size: 9px;
+	margin-left: 425px;
+}
+
+
+.footer {
+	background-color: white;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color:transparent;
+}
+
+.footer p {
+	font-size: 10px;
+	text-align: center;
+}
+
+.hour-container {
+	display: flex; 
+}
+
+.hour-container p{
+	padding-top: 0.25em;
+}
+
+
+.hour-container p:nth-child(even) {  
+	color: rgb(11, 134, 206);
+}  
+
+.hour-container p:nth-child(odd) {
+	color: rgb(248, 124, 67);
+} 
+
+.hours header {
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	font-weight: bold;
+}
+.hours .heavy {
+	font-weight: 500;
+	text-decoration: underline;
+}

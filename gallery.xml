@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery
+	
+	galleryStyle="MODERN"
+	title="Photoviewer"
+	textColor="FFFFFF"
+	frameColor="FFFFFF"
+	frameWidth="20"
+	thumbPosition="LEFT"
+	thumbColumns="3"
+	thumbRows="3"
+	showOpenButton="FALSE"
+	showFullscreenButton="TRUE"	
+	maxImageWidth="720"
+	maxImageHeight="720"
+	useFlickr="false"
+	flickrUserName=""
+	flickrTags=""
+	languageCode="AUTO"
+	languageList=""		
+	imagePath="images/viewer"
+	thumbPath="thumbs/"
+	
+>
+
+<image imageURL="images/viewer/WP_000026.jpg" thumbURL="images/viewer/WP_000026.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000027.jpg" thumbURL="images/viewer/WP_000027.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000028.jpg" thumbURL="images/viewer/WP_000028.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000029.jpg" thumbURL="images/viewer/WP_000029.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000030.jpg" thumbURL="images/viewer/WP_000030.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000032.jpg" thumbURL="images/viewer/WP_000032.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000033.jpg" thumbURL="images/viewer/WP_000033.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000034.jpg" thumbURL="images/viewer/WP_000034.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000035.jpg" thumbURL="images/viewer/WP_000035.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000036.jpg" thumbURL="images/viewer/WP_000036.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000051.jpg" thumbURL="images/viewer/WP_000051.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000052.jpg" thumbURL="images/viewer/WP_000052.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000055.jpg" thumbURL="images/viewer/WP_000055.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+<image imageURL="images/viewer/WP_000056.jpg" thumbURL="images/viewer/WP_000056.jpg" linkURL="" linkTarget="" >
+	<caption>TEXT HIER :D</caption>	
+</image>
+
+
+
+
+
+</simpleviewergallery>
